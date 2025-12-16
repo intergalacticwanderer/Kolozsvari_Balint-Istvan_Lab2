@@ -9,7 +9,7 @@ namespace Kolozsvari_Balint_Istvan_Lab2.Data
 {
     public class LibraryContext : DbContext
     {
-        public LibraryContext (DbContextOptions<LibraryContext> options)
+        public LibraryContext(DbContextOptions<LibraryContext> options)
             : base(options)
         {
         }
@@ -17,5 +17,7 @@ namespace Kolozsvari_Balint_Istvan_Lab2.Data
         public DbSet<Kolozsvari_Balint_Istvan_Lab2.Models.Book> Book { get; set; } = default!;
         public DbSet<Kolozsvari_Balint_Istvan_Lab2.Models.Customer> Customer { get; set; } = default!;
         public DbSet<Kolozsvari_Balint_Istvan_Lab2.Models.Genre> Genre { get; set; } = default!;
+
+        public DbSet<Kolozsvari_Balint_Istvan_Lab2.Models.Authors> Author { get; set; } = default!;
     }
 }
